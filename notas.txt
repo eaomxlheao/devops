@@ -10,3 +10,7 @@ Correr contenedor
 Subir imagen a docker hub
 	docker tag devops:latest eaomxlheao/devops:v1
 	docker push eaomxlheao/devops:v1
+
+Jenkins
+	Ubicacion de Git: /usr/bin/git
+	
