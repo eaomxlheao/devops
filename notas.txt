@@ -13,4 +13,10 @@ Subir imagen a docker hub
 
 Jenkins
 	Ubicacion de Git: /usr/bin/git
+	Unicacion jdk: /opt/java/openjdk
+	Instalacion de Maven
+		cd /home
+		curl https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.zip  --output apache-maven-3.8.3-bin.zip
+		unizip apache-maven-3.8.3-bin.zip
+		
 	
