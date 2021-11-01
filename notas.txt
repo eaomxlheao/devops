@@ -19,5 +19,14 @@ Jenkins
 		curl https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.zip  --output apache-maven-3.8.3-bin.zip
 		unizip apache-maven-3.8.3-bin.zip
 		
+Notacion de cron
+	MINUTE HOUR DOM MONTH DOW
+	MINUTE	Minutes within the hour (0–59)
+	HOUR	The hour of the day (0–23)
+	DOM	The day of the month (1–31)
+	MONTH	The month (1–12)
+	DOW	The day of the week (0–7) where 0 and 7 are Sunday.
+
+		
 	
 Token git: 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
