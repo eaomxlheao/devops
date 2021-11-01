@@ -27,6 +27,8 @@ Notacion de cron
 	MONTH	The month (1–12)
 	DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
+Variables de entorno
+echo "BUILD_ID" :: $BUILD_ID
 		
 	
 Token git: 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
