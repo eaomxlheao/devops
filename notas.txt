@@ -18,6 +18,8 @@ Jenkins
 		cd /home
 		curl https://dlcdn.apache.org/maven/maven-3/3.8.3/binaries/apache-maven-3.8.3-bin.zip  --output apache-maven-3.8.3-bin.zip
 		unizip apache-maven-3.8.3-bin.zip
+	Delivery Pipeline
+	Build Pipeline
 		
 Notacion de cron
 	MINUTE HOUR DOM MONTH DOW
@@ -28,7 +30,6 @@ Notacion de cron
 	DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
 Variables de entorno
-echo "BUILD_ID" :: $BUILD_ID
-		
+	echo "BUILD_ID" :: $BUILD_ID		
 	
 Token git: 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
