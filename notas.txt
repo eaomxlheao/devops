@@ -30,6 +30,9 @@ Notacion de cron
 	DOW	The day of the week (0–7) where 0 and 7 are Sunday.
 
 Variables de entorno
-	echo "BUILD_ID" :: $BUILD_ID		
+	echo "BUILD_ID" :: $BUILD_ID	
+	
+Ejecucion remota
+	curl -u eaomxlheao:moquito1 http://localhost:8080/job/remoteParam/buildWithParameters?token=moquito1
 	
 Token git: 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
