@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:lts-jdk11
 # if we want to install via apt
 USER root
-RUN apt-get update && apt-get install -y && apt-get install software-properties-common -y && apt-get install nano -y && apt-get install git -y && apt-get install ansible -y && apt-get install curl -y && apt-get install maven -y
+RUN apt-get update && apt-get install software-properties-common nano git ansible curl maven tree -y
 RUN curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 RUN apt-add-repository "deb [arch=$(dpkg --print-architecture)] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-RUN apt-get update && apt-get install terraform
+RUN apt-get update && apt-get install terraform -y
