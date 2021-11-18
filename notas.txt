@@ -1,6 +1,11 @@
 Ubicacion de volumenes
 	\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes
 
+Generacion de SSH keys
+	ssh-keygen
+	adduser eaomxlheao
+	usermod -aG sudo eaomxlheao
+
 Crear contenedor devops
 	docker run -d -p 8080:8080 -p 50000:50000 -p 22:22 -v jenkins_home:/var/jenkins_home -v devops_home:/home -v devops_root:/root --name devops devops
 
