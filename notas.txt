@@ -20,8 +20,10 @@ Jenkins
 	Ubicacion de Git: /usr/bin/git
 	Unicacion jdk: /opt/java/openjdk
 	ubicacion Maven: /usr/share/maven
-	Delivery Pipeline
-	Build Pipeline
+	Plugins 
+		Maven Integration
+		Delivery Pipeline
+		Build Pipeline
 		
 Notacion de cron
 	MINUTE HOUR DOM MONTH DOW
