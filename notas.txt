@@ -52,3 +52,6 @@ Ansible
 		[web]
 		server1 ansible_connection=ssh ansible_ssh_user=eaomxlheao ansible_ssh_private_key_file=/root/.ssh/id_rsa ansible_port=22
 		172.19.0.3 ansible_connection=ssh ansible_ssh_user=eaomxlheao ansible_ssh_pass=moquito1 ansible_port=22
+		
+	Ejecucion de playbook que requiere root (adentro del playbook debe tener become: true
+		sudo ansible-playbook -i hosts apache2.yaml --ask-become-pass
