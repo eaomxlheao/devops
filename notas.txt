@@ -1,10 +1,16 @@
 Ubicacion de volumenes
 	\\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes
 
-Generacion de SSH keys
-	ssh-keygen
+agregar usuario
 	adduser eaomxlheao
 	usermod -aG sudo eaomxlheao
+
+Generacion de SSH keys
+	ssh-keygen -t rsa
+copiar llave a otro server 
+	ssh-copy-id eaomxlheao@server1
+verificar que llaves estan funcionando
+	ssh -i /root/.ssh/id_rsa eaomxlheao@server1
 
 Crear contenedor devops
 	docker run -d -p 8080:8080 -p 50000:50000 -p 22:22 -v jenkins_home:/var/jenkins_home -v devops_home:/home -v devops_root:/root --name devops devops
@@ -40,3 +46,9 @@ Ejecucion remota
 	curl -u eaomxlheao:moquito1 http://localhost:8080/job/remoteParam/buildWithParameters?token=moquito1
 	
 Token git: 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
+
+Ansible
+	Host
+		[web]
+		server1 ansible_connection=ssh ansible_ssh_user=eaomxlheao ansible_ssh_private_key_file=/root/.ssh/id_rsa ansible_port=22
+		172.19.0.3 ansible_connection=ssh ansible_ssh_user=eaomxlheao ansible_ssh_pass=moquito1 ansible_port=22
